@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d95f511298.js" crossorigin="anonymous"></script>
+    <style>
+        .login-container {
+            max-width: 300px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="logo">iTravel</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a class="nav-link home" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About us</a></li>
+                <li class="bc"><a class="nav-link" name="hero" href="packages.html">Tour Packages</a>
+                    <!-- <ul class="sub-nav-link">
+                        <li> <a class="nav-link" href ="#" onclick="filterPackage('Pokhara')">Pokhara Tour Packages</a></li>
+                        <li> <a class="nav-link" href ="#" >Annapurna Tour Packages</a></li>
+                        <li> <a class="nav-link" href ="#" >Patan Tour Packages</a></li>
+                        <li> <a class="nav-link" href ="#" >Kathmandu</a></li>
+                        <li> <a class="nav-link" href ="#" >Bhaktapur</a></li>
+                        <li> <a class="nav-link" href ="#" >Gosainkunda</a></li>
+                    </ul> -->
+                </li>
+                <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li><a class="nav-link" href="#">Events</a></li>
+                <!-- <li><a class="nav-link" href="#">Hotels</a></li>
+                <li><a class="nav-link" href="#">Places</a></li> -->
+                <li><a class="nav-link" href="login.html">Log In</a></li>
+                <li><a class="nav-link" style="color: red; font-size: 1rem; font-weight: 600;" href="signup.html">Sign
+                        Up</a></li>
+                <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </nav>
+        <div class="nav-btn">
+            <i class="fas fa-bars navIcon" name="menu-btn"></i>
+            <i class="far fa-window-close navIcon" name="close-btn"></i>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="process-login.php" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- ---Footer--- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consectetur! Eligendi voluptatem cumque
+            libero, nobis voluptates, neque id, <br> maxime perferendis temporibus cupiditate ipsa labore repellat sit
+            corporis laborum! Sed, impedit.</p>
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-facebook-messenger"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-google"></i>
+        </div>
+        <p>Made with <i class="far fa-heart heart"></i> by <b>iTravel<b></p>
+    </section>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
