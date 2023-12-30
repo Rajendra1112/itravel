@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,10 @@
     <script src="https://kit.fontawesome.com/d95f511298.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="formstyle.css">
 </head>
+
 <body>
     <div class="main-body">
-        
+
         <div class="container">
             <div class="header">
                 <h2 id="book" onclick="bookNow()">Booking Now</h2>
@@ -19,7 +21,7 @@
             <form class="form" id="form" action="submit">
                 <div class="form-control">
                     <label>Username</label>
-                    <input type="text" placeholder="jeevan shrestha" id="username">
+                    <input type="text" placeholder="Rajendra Thapa" id="username">
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <small>Error Message</small>
@@ -47,18 +49,18 @@
                 </div>
                 <div class="category">
                     <label for="category"><b>Package Category</b><br>
-                    <input type="radio" name="category" value="lucury" checked>Lucury
-                    <input type="radio" name="category" value="confort">Confort
-                    <input type="radio" name="category" value="standard">Standard
-                    <input type="radio" name="category" value="budget">Budget
-                </label>
+                        <input type="radio" name="category" value="lucury" checked>Lucury
+                        <input type="radio" name="category" value="confort">Confort
+                        <input type="radio" name="category" value="standard">Standard
+                        <input type="radio" name="category" value="budget">Budget
+                    </label>
                 </div>
                 <div class="Adv-pay">
                     <label for="Adv-pay"><b>Advance Pay</b><br>
-                    <input type="radio" name="Adv-pay" value="lucury" checked>40%
-                    <input type="radio" name="Adv-pay" value="confort">60%
-                    <input type="radio" name="Adv-pay" value="standard">100%
-                </label>
+                        <input type="radio" name="Adv-pay" value="lucury" checked>40%
+                        <input type="radio" name="Adv-pay" value="confort">60%
+                        <input type="radio" name="Adv-pay" value="standard">100%
+                    </label>
                 </div>
                 <button type="submit" style="cursor: pointer;">Proceed to Pay</button>
                 <button type="reset" id="s" onclick="bookNow()">Costumize</button>
@@ -68,4 +70,5 @@
     <script src="form.js"></script>
     <script src="book.js"></script>
 </body>
+
 </html>
